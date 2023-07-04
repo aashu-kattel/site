@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Aashutosh</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Aashutosh Kattel"> 
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body {
+      background-color: #008080;
+      color: #ffffff;
+      font-family: 'Poppins', sans-serif;
+      text-align: center;
+      padding: 50px;
+    }
+
+    h1 {
+      font-size: 36px;
+    }
+
+    p {
+      font-size: 18px;
+      overflow: hidden;
+      white-space: nowrap;
+      border-right: 1px solid #ffffff;
+      animation: typewriter 2s steps(40) 1s 1 normal both,
+                blinkTextCursor 500ms steps(40) infinite normal;
+    }
+
+    @keyframes typewriter {
+      from {
+        width: 0;
+      }
+      to {
+        width: 100%;
+      }
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 5px 10px;
+      background-color: #ffffff;
+      color: #000000;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #004040;
+      color: #ffffff;
+    }
+  </style>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      document.querySelector('h1').addEventListener('mouseover', function() {
+        document.body.style.cursor = 'none';
+      });
+      document.querySelector('h1').addEventListener('mouseout', function() {
+        document.body.style.cursor = 'default';
+      });
+    });
+  </script>
+</head>
+<body>
+  <h1>Aashutosh Kattel</h1>
+  <p>&lt;&lt; केवल एक प्राविधिक उत्साही &gt;&gt;</p>
+  <a href="https://www.linkedin.com/in/aashutosh-kattel/" class="button">LinkedIn <i class="fa fa-linkedin-square"></i> </a>
+  <a href="https://github.com/aashu-kattel" class="button">GitHub <i class="fa fa-github-square"></i></a>
+</body>
+</html>
