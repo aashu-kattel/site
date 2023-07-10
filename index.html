@@ -60,16 +60,29 @@
       vertical-align: middle;
     }
 
-    code{
-      font-family: 'Roboto', sans-serif;
-      font-size: 18px;
-      color: #ffffff;
-      border: 1px solid #ffffff;
-      box-shadow: 0 0 10px #ffffff;
+    #term{
       border-radius: 5px;
-      padding: 10px;
-      margin-top: 60px;
-      display: inline-block;
+      box-shadow: 2px 2px 10px #ffffff;
+      margin-top: 35px;
+    }
+    #term:hover{
+      box-shadow: 3px 3px 8px #04ff00;
+      cursor: pointer;
+      transform: translate(-5px, -5px);
+      transition: all 0.2s ease-in-out;
+    }
+
+    @media only screen and (max-width: 600px) {
+      #term{
+        width: 300px;
+        height: 225px;
+      }
+    }
+    @media only screen and (max-width: 400px) {
+      #term{
+        width: 270px;
+        height: 200px;
+      }
     }
 
   </style>
@@ -93,14 +106,6 @@
   <a href="https://github.com/aashu-kattel" class="button">GitHub <i class="fa fa-github-square"></i></a>
   <a href="https://www.threads.net/@aashutosh_kattel" class="button" id="threads">Threads <img src="threads.png" width="16" height="16"></a>
   <br>
-    <code>
-      ``` च्याट जि पि टी लाई ASCII मा हास्न लगाको, यसरी पो हासो त ``` <br><br>
-    ________
-    /         \
-   |           |
-   |  (  ͡° ͜ʖ ͡°)  |
-    \          /
-      --------
-    </code>
+  <img src="kali.JPG" id="term" width="400" height="300">
 </body>
 </html>
