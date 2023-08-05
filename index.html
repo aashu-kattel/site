@@ -113,6 +113,22 @@
       transition: all 0.2s ease-in-out;
     }
 
+    @keyframes bg-entrance {
+    0% {
+      background-color: #008080;
+    }
+    50% {
+      background-color: #7d0000;
+    }
+    100% {
+      background-color: #008080;
+    }
+  }
+
+  body {
+    animation: bg-entrance 15s infinite alternate;
+  }
+
     @media only screen and (max-width: 600px) {
       #term{
         width: 300px;
@@ -161,6 +177,7 @@
   </script>
 </head>
 <body>
+    
   <h1>Aashutosh Kattel</h1>
   <p>&lt;&lt; केवल एक प्राविधिक उत्साही &gt;&gt;</p>
   <a href="https://www.linkedin.com/in/aashutosh-kattel/" class="button">LinkedIn <i class="fa fa-linkedin-square"></i> </a>
@@ -171,5 +188,6 @@
   <a href="https://aashu-kattel.github.io/quote_generator/" id="pr-btn">Lightweight Initiative &#128064</a>
   <br>
   <img src="/static/images/kali.JPG" id="term" width="400" height="300">
+ 
 </body>
 </html>
