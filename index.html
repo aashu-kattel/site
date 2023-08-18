@@ -11,7 +11,7 @@
   <style>
 
     body {
-      background-color: #008080;
+      /* background-color: #008080; */
       color: #ffffff;
       font-family: 'Poppins', sans-serif;
       text-align: center;
@@ -129,6 +129,39 @@
     animation: bg-entrance 15s infinite alternate;
   }
 
+  .loader {
+    width: 20px;
+    height: 20px;
+    border: 3px solid #FF3D00;
+    border-radius: 50%;
+    display: inline-block;
+    /* position: relative; */
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+.loader::after {
+  content: '';  
+  box-sizing: border-box;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 3px solid;
+  border-color: #ffffff transparent;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} 
+
     @media only screen and (max-width: 600px) {
       #term{
         width: 300px;
@@ -191,7 +224,9 @@
   <img src="/static/images/kali.JPG" id="term" width="400" height="300">
   <br>
   <h5>
-    Here's your IP &#128521; => <span id="ip-address"></span>
+    <span id="here">Here's your IP &#128521; =></span>
+    <span id="ip-address"><span class="loader"></span></span>
+    
   </h5>
   <iframe src="https://discord.com/widget?id=1140961925879046246&theme=dark" width="250" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
 </body>
