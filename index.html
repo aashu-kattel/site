@@ -7,23 +7,35 @@
     <meta name="description" content="Aashutosh Kattel"> 
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto:wght@300&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <style>
-
-  @import url('https://fonts.googleapis.com/css2?family=Handjet&display=swap');
-    
-    body {
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      
+      @import url('https://fonts.googleapis.com/css2?family=Handjet&display=swap');
+      
+      body {
       color: #ffffff;
       font-family: 'Poppins', sans-serif;
       text-align: center;
       padding: 50px;
       cursor: url('/static/images/cursor.png'), auto;
     }
-
+    
     body {
       animation: bg-entrance 15s infinite alternate;
     }
     
+    @keyframes bg-entrance {
+    0% {
+      background-color: #008080;
+    }
+    50% {
+      background-color: #7d0000;
+    }
+    100% {
+      background-color: #008080;
+    }
+  }
+  
     h1 {
       font-size: 36px;
     }
@@ -106,17 +118,6 @@
       transition: all 0.2s ease-in-out;
     }
 
-    @keyframes bg-entrance {
-    0% {
-      background-color: #008080;
-    }
-    50% {
-      background-color: #7d0000;
-    }
-    100% {
-      background-color: #008080;
-    }
-  }
 
   .loader {
     width: 20px;
